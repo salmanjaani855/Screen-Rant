@@ -6,7 +6,7 @@ import Frame1 from './assets/Frame1.svg'
 import Frame2 from './assets/Frame2.png'
 import Frame3 from './assets/Frame3.svg'
 import Platform1 from './assets/Platform1.png'
-import Platform2 from './assets/Platform2.png'
+import prime from './assets/prime.png'
 import Platform3 from './assets/Platform3.png'
 import Platform4 from './assets/Platform4.png'
 import Platform5 from './assets/Platform5.png'
@@ -200,7 +200,7 @@ const Homepage = () => {
                     <div className="flex flex-row items-start justify-start gap-4">
                       <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover" alt="" src={Platform1} />
                       <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={Platform3} />
-                      <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={Platform2} />
+                      <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={prime} />
                     </div>
                   </div>
 
@@ -209,7 +209,7 @@ const Homepage = () => {
                     <div className="font-medium">Rent/Buy</div>
                     <div className="flex flex-row flex-wrap gap-4 text-xs text-darkgray">
                       <div className="flex flex-col items-center gap-1">
-                        <img className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-md" alt="" src={Platform2} />
+                        <img className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-md" alt="" src={prime} />
                         <div>Rent</div>
                       </div>
                       <div className="flex flex-col items-center gap-1">
