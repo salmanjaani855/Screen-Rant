@@ -7,9 +7,9 @@ import Frame2 from './assets/Frame2.png'
 import Frame3 from './assets/Frame3.svg'
 import Platform1 from './assets/Platform1.png'
 import prime from './assets/prime.png'
-import platform3 from './assets/platform3.png'
-import platform4 from './assets/platform4.png'
-import platform5 from './assets/latform5.png'
+import platforms from './assets/platform3.png'
+import platformss from './assets/platform4.png'
+import platformsss from './assets/latform5.png'
 import Add from './assets/Add.svg'
 import Add2 from './assets/Add2.svg'
 import ChevronDown from './assets/ChevronDown.svg'
@@ -199,7 +199,7 @@ const Homepage = () => {
                     </div>
                     <div className="flex flex-row items-start justify-start gap-4">
                       <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover" alt="" src={Platform1} />
-                      <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={platform3} />
+                      <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={platforms} />
                       <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={prime} />
                     </div>
                   </div>
@@ -217,11 +217,11 @@ const Homepage = () => {
                         <div>Rent</div>
                       </div>
                       <div className="flex flex-col items-center gap-1">
-                        <img className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-md" alt="" src={platform4} />
+                        <img className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-md" alt="" src={platformss} />
                         <div>Buy</div>
                       </div>
                       <div className="flex flex-col items-center gap-1">
-                        <img className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-md" alt="" src={platform5} />
+                        <img className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-md" alt="" src={platformsss} />
                         <div>Buy</div>
                       </div>
                     </div>
