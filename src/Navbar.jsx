@@ -81,7 +81,7 @@ const Navbar = ({showSignIn}) => {
               </div>
             </div>
 
-            <div className="relative leading-[1.75rem]">Menu</div>
+            <div className="relative leading-[1.75rem]"></div>
           </div>
           <div className="flex flex-row items-center justify-start gap-[0.75rem]">
             <div>
@@ -113,7 +113,7 @@ const Navbar = ({showSignIn}) => {
               </div>
             </div>
 
-            <div className="relative leading-[1.75rem]">Search</div>
+            <div className="relative leading-[1.75rem]"></div>
           </div>
         </div>
         <Link to="/"><img className="w-[14.025rem] relative h-[1.525rem]" alt="" src={logo} /></Link>

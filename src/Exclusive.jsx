@@ -21,20 +21,15 @@ import Arrow_right from './assets/Arrow_right.svg'
 const Exclusive = () => {
     return (
         <div>
-            <div className="w-full relative bg-gray-400 h-[420.938rem] text-left text-[1rem] text-white font-dm-sans">
+            <div className="w-full min-h-screen relative bg-gray-400 text-left text-base sm:text-lg md:text-xl lg:text-2xl text-white font-dm-sans">
         
-                <img className="absolute top-[0rem] left-0 w-full max-w-[90rem] h-[22.125rem] sm:h-[18rem] xs:h-[14rem] object-cover" alt="" src={CoverImage} />
-                <div className="absolute top-[20.063rem] left-1/2 -translate-x-1/2 
-[backdrop-filter:blur(48px)] rounded-xl 
-[background:linear-gradient(180deg,_rgba(24,_24,_27,_0.75),_rgba(24,_24,_27,_0))] 
-border-gray-600 border-solid border-[2px] box-border 
-w-[66.5rem] overflow-hidden flex flex-col 
-items-start justify-start p-[2rem] gap-[1.5rem] text-lightgray">
+                <img className="absolute top-0 left-0 w-full h-[14rem] sm:h-[18rem] md:h-[20rem] lg:h-[22.125rem] xl:h-[24rem] object-cover" alt="" src={CoverImage} />
+                <div className="absolute top-[20.063rem] left-1/2 -translate-x-1/2 [backdrop-filter:blur(48px)] rounded-xl [background:linear-gradient(180deg,_rgba(24,_24,_27,_0.75),_rgba(24,_24,_27,_0))] border-gray-600 border-solid border-[2px] box-border w-full max-w-[90rem] xl:max-w-none px-4 sm:px-6 md:px-8 overflow-hidden flex flex-col items-start justify-start gap-[1.5rem] text-lightgray">
                     <div className="self-stretch flex flex-col items-start justify-start gap-[0.5rem]">
                         <div className="self-stretch relative leading-[1.5rem] font-medium overflow-hidden text-ellipsis whitespace-nowrap">Home</div>
                         <div className="self-stretch flex flex-col items-start justify-start gap-[0.625rem] text-[3rem] text-white font-staatliches">
                             <div className="self-stretch relative leading-[100%]">What’s on TV Tonight - TV Listings</div>
-                            <div className="self-stretch relative text-[1rem] leading-[1.5rem] font-dm-sans text-gray-500">Get today's TV schedule for the best primetime shows, movies, and more. Here's what to watch tonight.</div>
+                            <div className="self-stretch relative text-[1rem] leading-[1.5rem] font-dm-sans">Get today's TV schedule for the best primetime shows, movies, and more. Here's what to watch tonight.</div>
                         </div>
                     </div>
                     <div className="self-stretch flex flex-row items-start justify-start gap-[1rem] text-[0.875rem] text-darkgray">
@@ -46,11 +41,14 @@ items-start justify-start p-[2rem] gap-[1.5rem] text-lightgray">
                     </div>
                     <img className="self-stretch relative rounded-lg max-w-full overflow-hidden h-[26.5rem] shrink-0 object-cover" alt="" src={Image} />
                 </div>
-                <div className="absolute top-[157.063rem] left-[59.188rem] w-[19.063rem] flex flex-col items-start justify-start gap-[1rem] text-[1.5rem]">
+                {/* <div className="absolute top-[157.063rem] left-[59.188rem] w-[19.063rem] flex flex-col items-start justify-start gap-[1rem] text-[1.5rem]">
                     <div className="self-stretch relative leading-[2rem] font-medium">Editorial Text Section</div>
                     <div className="self-stretch relative text-[0.875rem] leading-[1.25rem] text-[#a1a1aa] [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:4] [-webkit-box-orient:vertical]">With all the death in the series, it is surprising to look back and see who survives on Sons of Anarchy. No character was ever safe in the FX series, even the key antihero Jax Teller didn't quite manage to escape the Grim Reaper. The series takes a look at the life and crimes of the titular biker gang, their close allies, and their deadliest enemies, which includes some memorable and crushing deaths.</div>
-                </div>
-                <div className="absolute top-[276.313rem] left-1/2 -translate-x-1/2 w-[90%] max-w-[66.688rem] flex flex-col items-start justify-start gap-[1.5rem]">
+                </div> */}
+                <div className="absolute top-[290.313rem] left-1/2 -translate-x-1/2 
+w-full max-w-[80rem] xl:max-w-none
+px-4 sm:px-6 md:px-8 
+flex flex-col items-start justify-start gap-[1.5rem]">
                     <div className="relative text-[1.875rem] leading-[2.25rem] font-medium">Summary</div>
                     <div className="self-stretch relative text-[1.25rem] leading-[1.75rem]">
                         <ul className="m-0 font-inherit text-[length:inherit] pl-[1.35rem]">
@@ -66,12 +64,12 @@ items-start justify-start p-[2rem] gap-[1.5rem] text-lightgray">
                         </ul>
                     </div>
                     <div className="self-stretch relative leading-[1.75rem] text-lightgray">{`A House of the Dragon season 2 set photo may indicate a significant departure from the show's source material. House of the Dragon season 2 filming has been underway since April and was permitted to continue production during the SAG-AFTRA strike due to most of the cast being represented by the UK's labor union, Equity. The series is a prequel to Game of Thrones and is based on George R. R. Martin's Fire & Blood book. Despite being based on the book, season 1 made a few changes to the source material, and season 2 may do so, too.`}</div>
-                    <div className="self-stretch relative leading-[1.75rem] text-lightgray">{`A House of the Dragon season 2 set photo may indicate a significant departure from the show's source material. House of the Dragon season 2 filming has been underway since April and was permitted to continue production during the SAG-AFTRA strike due to most of the cast being represented by the UK's labor union, Equity. The series is a prequel to Game of Thrones and is based on George R. R. Martin's Fire & Blood book. Despite being based on the book, season 1 made a few changes to the source material, and season 2 may do so, too.`}</div>
+                    {/* <div className="self-stretch relative leading-[1.75rem] text-lightgray">{`A House of the Dragon season 2 set photo may indicate a significant departure from the show's source material. House of the Dragon season 2 filming has been underway since April and was permitted to continue production during the SAG-AFTRA strike due to most of the cast being represented by the UK's labor union, Equity. The series is a prequel to Game of Thrones and is based on George R. R. Martin's Fire & Blood book. Despite being based on the book, season 1 made a few changes to the source material, and season 2 may do so, too.`}</div> */}
                     <div className="self-stretch relative leading-[1.75rem] text-lightgray">
                         <a className="text-[inherit]" href="https://redanianintelligence.com/2023/09/08/house-of-the-dragon-season-2-may-include-the-undead/" target="_blank">Redanian Intelligence</a>
                     </div>
                 </div>
-                <div className="absolute top-[315.813rem] left-1/2 -translate-x-1/2 w-[90%] max-w-[66.688rem] flex flex-col items-start justify-start gap-[1.5rem] text-lightgray">
+                <div className="absolute top-[325.813rem] left-1/2 -translate-x-1/2 w-full px-4 sm:px-6 md:px-8 flex flex-col items-start justify-start gap-[1.5rem] text-lightgray">
                     <div className="self-stretch relative text-[1.875rem] leading-[2.25rem] font-medium text-white z-[0]">Could Wights Make An Appearance In House Of The Dragon Season 2?</div>
                     <img className="self-stretch relative max-w-full overflow-hidden h-[33.438rem] shrink-0 object-cover z-[1]" alt="" src={monster} />
                     <div className="self-stretch relative leading-[1.75rem] z-[2]">
@@ -117,7 +115,7 @@ items-start justify-start p-[2rem] gap-[1.5rem] text-lightgray">
                         </div>
                     </div>
                 </div> */}
-                <div className="absolute top-[218.563rem] left-1/2 -translate-x-1/2 w-[90%] max-w-[66.5rem] flex flex-col items-start justify-start gap-[1rem] text-lightgray">
+                <div className="absolute top-[218.563rem] left-1/2 -translate-x-1/2 w-[90%] max-w-[66.5rem] xl:max-w-none flex flex-col items-start justify-start gap-[1rem] text-lightgray">
                     <div className="flex flex-row items-center justify-start gap-[0.5rem]">
                         <div className="relative leading-[100%] font-medium">Home</div>
                         <img className="w-[1.25rem] relative h-[1.25rem]" alt="" src={Arrow_right} />
@@ -132,7 +130,10 @@ items-start justify-start p-[2rem] gap-[1.5rem] text-lightgray">
                     </div>
                     <img className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover" alt="" src={Zattack} />
                 </div>
-                <div className="absolute top-[123.313rem] left-[11.75rem] w-[46.188rem] flex flex-col items-start justify-start gap-[2rem]">
+                <div className="absolute top-[123.313rem] left-1/2 -translate-x-1/2 
+w-full max-w-[72rem] xl:max-w-none 
+px-4 sm:px-6 md:px-8 
+flex flex-col items-start justify-start gap-[2rem] ">
                     <div className="self-stretch relative text-[2rem] leading-[2rem] font-medium">Tonight's Movie Highlights</div>
                     <div className="self-stretch h-[27.75rem] flex flex-row items-start justify-start gap-[1.25rem]">
                         <img className="self-stretch w-[18rem] rounded-md max-h-full object-cover" alt="" src={IronMan} />
@@ -219,7 +220,7 @@ items-start justify-start p-[2rem] gap-[1.5rem] text-lightgray">
                         </div>
                     </div>
                 </div>
-                <div className="absolute top-[65.688rem] left-1/2 -translate-x-1/2 w-[66.438rem] max-w-full overflow-hidden flex flex-col items-start justify-start gap-[2rem] text-[2rem]">
+                <div className="absolute top-[65.688rem] left-1/2 -translate-x-1/2 w-full max-w-[90rem] px-4 sm:px-6 md:px-8 overflow-hidden flex flex-col items-start justify-start gap-[2rem] text-[clamp(1rem,2vw,2rem)]">
                     <div className="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
                         <div className="self-stretch relative leading-[125%] font-medium">Today's Schedule - Tuesday, September 12, 2023</div>
                         <div className="self-stretch relative text-[1.125rem] leading-[1.75rem] font-medium text-darkgray">{`On primetime tonight, catch episodes of `}

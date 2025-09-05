@@ -35,6 +35,9 @@ import image1 from './assets/image1.png'
 import image2 from './assets/image2.png'
 import image3 from './assets/image3.png'
 import image4 from './assets/image4.png'
+import apple from './assets/apple.png'
+import max from './assets/max.png'
+
 import Arrow_right from './assets/Arrow_right.svg'
 import LocomotiveScroll from 'locomotive-scroll';
 
@@ -42,19 +45,21 @@ const scroll = new LocomotiveScroll();
 
 const Homepage = () => {
   return (
-    <div>
-      <div className="w-full relative bg-gray-400 h-[268rem] overflow-hidden text-center text-[2rem] text-white font-dm-sans">
+    
+  
+      <div className="w-full min-h-screen relative bg-gay-400 overflow-visible text-center text-white font-dm-sans text-base sm:text-lg md:text-xl lg:text-2xl">
         <img className="absolute top-0 left-0 w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" alt="" src={CoverImage} />
-        <div className="absolute top-[23rem] left-1/2 transform -translate-x-1/2 flex flex-col items-start justify-start gap-[4rem] text-left">
-          <div className="flex flex-row items-start justify-start gap-[1.25rem] text-[1.25rem]">
+        <div className="absolute top-[23rem] w-full max-w-[1920px] mx-auto flex flex-col items-center justify-start gap-[4rem] text-left">
+          <div className="flex flex-row items-center justify-between gap-[1.25rem] text-[1.25rem] w-auto 1900:w-[80rem]">
             <div data-scroll-container className="self-stretch flex flex-col items-start justify-start gap-[2rem]">
               {/* Poster with parallax effect */}
               <img
                 data-scroll
                 data-scroll-speed="1"
-                className="w-[25.875rem] relative rounded-xl h-[38.25rem] object-cover"
+                className="w-full h-auto max-w-full rounded-xl object-cover"
                 alt=""
                 src={Poster}
+                
               />
 
               {/* Info box with smooth scroll effect */}
@@ -128,12 +133,7 @@ const Homepage = () => {
             
 
             <div className="w-[39.375rem] relative h-[102rem] text-[1rem]">
-              <div
-                data-scroll
-                data-scroll-section
-                data-scroll-speed="1"
-                className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[39.375rem] [backdrop-filter:blur(48px)] rounded-xl [background:linear-gradient(180deg,_rgba(24,_24,_27,_0.75),_rgba(24,_24,_27,_0))] border-gray-700 border-solid border-2 box-border overflow-hidden flex flex-col items-start justify-start p-4 sm:p-6 md:p-8"
-              >
+              <div data-scroll data-scroll-section data-scroll-speed="1" className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[39.375rem] sm:max-w-[42rem] md:max-w-[48rem] lg:max-w-[56rem] xl:max-w-[75rem] 2xl:max-w-[90rem] [backdrop-filter:blur(48px)] rounded-xl [background:linear-gradient(180deg,_rgba(24,_24,_27,_0.75),_rgba(24,_24,_27,_0))] border-gray-700 border-2 box-border overflow-hidden flex flex-col items-start justify-start p-4 sm:p-6 md:p-8">
                 <div className="w-full flex flex-col items-start justify-start gap-4 sm:gap-6 md:gap-8">
 
                   {/* Title Section */}
@@ -198,8 +198,8 @@ const Homepage = () => {
                       </div>
                     </div>
                     <div className="flex flex-row items-start justify-start gap-4">
-                      <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover" alt="" src={Platform1} />
-                      <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={platforms} />
+                      <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover" alt="" src={apple} />
+                      <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={max} />
                       <img className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-md" alt="" src={prime} />
                     </div>
                   </div>
@@ -213,7 +213,7 @@ const Homepage = () => {
                         <div>Rent</div>
                       </div>
                       <div className="flex flex-col items-center gap-1">
-                        <img className="w-12 h-12 sm:w-14 sm:h-14 object-cover" alt="" src={Platform1} />
+                        <img className="w-12 h-12 sm:w-14 sm:h-14 object-cover" alt="" src={apple} />
                         <div>Rent</div>
                       </div>
                       <div className="flex flex-col items-center gap-1">
@@ -240,7 +240,7 @@ const Homepage = () => {
               </div>
 
 
-              <div className="absolute top-[39.75rem] left-0 flex flex-col items-start justify-start gap-8 text-xl w-full max-w-[39.375rem] px-4 sm:px-0">
+              <div className="absolute top-[39.75rem] left-1/2 -translate-x-1/2 w-full max-w-full flex flex-col items-center justify-between gap-8 text-xl px-4 sm:px-6 lg:px-8">
 
                 {/* Section 1: Videos */}
                 <div className="w-full border-b border-darkslategray box-border flex flex-col gap-5 pb-5">
@@ -271,9 +271,37 @@ const Homepage = () => {
                     </div>
                   </div>
                 </div>
+                <div className="w-full border-b border-darkslategray box-border flex flex-col gap-5 pb-5">
+                  <div className="flex flex-row items-center justify-between w-full">
+                    <div className="font-medium leading-8">Photos</div>
+                    <div className="flex flex-row items-center gap-1 text-base">
+                      <div className="font-medium leading-6">View all</div>
+                      <img className="w-6 h-6" alt="" src={ArrowRight} />
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-5 w-full">
+                    {/* Trailer 1 */}
+                    <div className="relative w-full sm:w-1/2 h-40 sm:h-44">
+                      <img className="absolute inset-0 w-full h-full rounded-lg object-cover" alt="" src={Trailer3} />
+
+                      {/* <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 text-sm sm:text-base">
+                        <img className="w-10 h-10" alt="" src={PlayButton} />
+                        <b>Play Trailer</b>
+                      </div> */}
+                    </div>
+
+                    {/* Trailer 2 */}
+                    <div className="relative w-full sm:w-1/2 h-40 sm:h-44 rounded-lg bg-[url('./assets/Trailer4.png')] bg-cover bg-no-repeat">
+                      <div className="absolute top-2 right-2 bg-gray-600 text-white text-xs px-2 py-0.5 rounded">10:30</div>
+                      <img className="w-[1.25rem] absolute !!m-[0 important] top-[calc(50%_-_11px)] right-[0.75rem] h-[1.25rem] object-contain z-[5]" alt="" src={Arrow_right} />
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#09090b]/90 rounded-lg"></div>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Section 2: Photos */}
-                <div className="w-full border-b border-darkslategray box-border flex flex-col gap-5 pb-5">
+                {/* <div className="w-full border-b border-darkslategray box-border flex flex-col gap-5 pb-5">
                   <div className="flex flex-row items-center justify-between w-full">
                     <div className="font-medium leading-8">Photos</div>
                     <div className="flex flex-row items-center gap-1 text-base">
@@ -284,14 +312,15 @@ const Homepage = () => {
 
                   <div className="flex flex-col sm:flex-row gap-5 w-full">
 
-                    <img className="flex-1 h-40 sm:h-44 rounded-lg object-cover" alt="" src={Trailer3} />
+                    <img className="flex-1 h-40 sm:h-44 rounded-lg object-cover" alt="" src={Trailer3} /> */}
 
-                    <img className="flex-1 h-40 sm:h-44 rounded-lg object-cover" alt="" src={Trailer4} />
-                    <img className="w-[1.25rem] absolute !!m-[0 important] top-[calc(43%_-_11px)] right-[0] h-[1.25rem] object-contain z-[5]" alt="" src={Arrow_right} />
+                          
+                    {/* <img className="flex-1 h-40 sm:h-44 rounded-lg object-cover" alt="" src={Trailer4} /> */}
+                    {/* <img className="absolute top-[43%] right-0 w-5 h-5 sm:w-6 sm:h-6 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain z-5" alt="" src={Arrow_right} /> */}
 
-                  </div>
+                  {/* </div>
 
-                </div>
+                </div> */}
 
                 {/* Section 3: Top Cast */}
                 <div className="w-full border-b border-darkslategray box-border flex flex-col gap-5 pb-5">
@@ -401,28 +430,66 @@ const Homepage = () => {
                 </div>
 
                 {/* Section 4: Creator */}
-                <div className="w-full border-b border-darkslategray box-border flex flex-row items-center justify-between pb-5">
-                  <div className="flex flex-row items-center gap-3">
-                    <div className="font-medium leading-8">Creator</div>
-                    <div className="font-medium underline text-goldenrod-100 leading-8">Kurt Sutter</div>
-                  </div>
-                  <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center">
-                    <img className="w-5 h-5" alt="" src={downArrow} />
-                  </div>
-                </div>
+          <div className="w-full border-b border-darkslategray box-border">
+  <details className="group">
+    <summary className="flex flex-row items-center justify-between pb-5 font-medium cursor-pointer list-none">
+      {/* Left side text */}
+      <div className="flex flex-row items-center gap-3">
+        <div className="leading-8">Creator</div>
+        <div className="underline text-goldenrod-100 leading-8">Kurt Sutter</div>
+      </div>
+
+      {/* Arrow icon */}
+      <span className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center transition-transform group-open:rotate-180">
+        <img className="w-5 h-5" alt="" src={downArrow} />
+      </span>
+    </summary>
+
+    {/* Dropdown content */}
+    <div className="pb-4 px-1 text-darkgray group-open:animate-fadeIn">
+      <p>
+        It took me 4 months to watch the first 4 episodes of this show. Everytime I tried, I just couldn't get into it until something clicked
+      </p>
+    </div>
+  </details>
+</div>
+          <div className="w-full border-b border-darkslategray box-border">
+  <details className="group">
+    <summary className="flex flex-row items-center justify-between pb-5 font-medium cursor-pointer list-none">
+      {/* Left side text */}
+      <div className="flex flex-row items-center gap-3">
+        <div className="leading-8">All & crew</div>
+        
+      </div>
+
+      {/* Arrow icon */}
+      <span className="w-7 h-7 rounded-full  bg-gray-100 flex items-center justify-center transition-transform group-open:rotate-180">
+        <img className="w-5 h-5" alt="" src={downArrow} />
+      </span>
+    </summary>
+
+    {/* Dropdown content */}
+    <div className="pb-4 px-1 text-darkgray group-open:animate-fadeIn">
+      <p>
+        I know that people say this all the time about a ton of different shows but Sons of Anarchy is absolutely one of the best shows.
+      </p>
+    </div>
+  </details>
+</div>
+
 
                 {/* Section 5: All & crew */}
-                <div className="w-full border-b border-darkslategray box-border flex flex-row items-center justify-between pb-5">
+                {/* <div className="w-full border-b border-darkslategray box-border flex flex-row items-center justify-between pb-5">
                   <div className="font-medium leading-8">All & crew</div>
                   <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center">
                     <img className="w-5 h-5" alt="" src={downArrow} />
                   </div>
-                </div>
+                </div> */}
               </div>
 
             </div>
           </div>
-          <div className="w-full max-w-[66.5rem] flex flex-col items-start justify-start gap-[1.5rem] px-4 sm:px-6 lg:px-1">
+          <div className="w-full max-w-[1536px] mx-auto flex flex-col items-start justify-start gap-6 px-4 sm:px-6 lg:px-12">
             <div className="self-stretch relative leading-[2rem] font-medium">
               Synopsis
             </div>
@@ -457,7 +524,7 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div className="w-full max-w-[66.5rem] mx-auto flex flex-col gap-8 px-4">
+          <div className="w-full max-w-[90%] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto flex flex-col gap-8 px-4">
             {/* Header Section */}
             <div className="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="flex-1 text-lg sm:text-xl md:text-2xl font-medium">
@@ -535,7 +602,7 @@ const Homepage = () => {
                     <div className="text-base leading-6 font-medium text-white">
                       Sons Of Anarchy: Why Opie Was Killed Off In Season 5
                     </div>
-                    <div className="text-sm leading-4 line-clamp-3 flex-1">
+                    <div className="text-sm leading-4 line-clamp-2 flex-1">
                       Sons of Anarchy is a great show, chronicling the Shakespearean saga of a biker gang, but there are some flaws that stick out on a rewatch today.
                     </div>
                     <div className="rounded-full bg-gray-100 px-3 py-1 text-xs">
@@ -575,23 +642,23 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div className="w-[66.5rem]  flex flex-col items-start justify-start gap-[1.5rem] text-[0.875rem]">
-            <div className="self-stretch flex flex-row items-center justify-start gap-[1rem]">
+          <div className="w-full max-w-[90%] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto flex flex-col items-start justify-start gap-6 text-sm sm:text-base md:text-lg">
+            <div className="self-stretch flex flex-row items-center justify-between gap-4">
               <div className="flex-1 relative text-[2rem] leading-[2rem] font-medium">User Reviews</div>
               <div className="shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded bg-goldenrod-100 flex flex-row items-center justify-center py-[0.375rem] px-[0.75rem] gap-[0.25rem] text-black">
-                <img className="w-[1rem] relative h-[1rem]" alt="" src={pen} />
+                <img className="w-4 h-4" alt="" src={pen} />
                 <div className="relative leading-[1.25rem] font-medium">Write a review</div>
               </div>
-              <div className="rounded border-darkslategray border-solid border-[1px] flex flex-row items-center justify-start py-[0.375rem] px-[0.75rem] gap-[0.25rem] text-darkgray">
+              <div className="rounded border border-darkslategray flex items-center py-1 px-3 gap-1 text-darkgray cursor-pointer">
                 <div className="relative leading-[1.25rem] font-medium">View All</div>
-                <img className="w-[1rem] relative h-[1rem]" alt="" src={upArrow} />
+                <img className="w-4 h-4" alt="" src={upArrow} />
               </div>
             </div>
-            <div className="self-stretch h-[16rem flex flex-row items-start justify-start gap-[1.5rem]">
-              <div className="self-stretch flex-1 rounded-md bg-gray-200 border-gray-100 border-solid border-[1px] flex flex-col items-start justify-start p-[1.25rem] gap-[0.75rem]">
-                <div className="self-stretch flex flex-row items-start justify-between gap-[0rem] text-[1rem]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+              <div className="w-full rounded-md bg-gray-200 border border-gray-100 flex flex-col p-5 gap-3">
+                <div className="self-stretch flex flex-row items-center justify-between gap-[0rem] text-[1rem]">
                   <div className="flex-1 relative leading-[1.5rem] font-medium">Once you watch it, you won't be able to stop recommending it</div>
-                  <div className="flex flex-row items-center justify-start gap-[0.25rem] text-[0.875rem]">
+                  <div className="flex flex-row items-center justify-between gap-[0.25rem] text-[0.875rem]">
                     <img className="w-[1.25rem] relative h-[1.25rem]" alt="" src={star} />
                     <div className="relative leading-[1.25rem] font-medium">8.9</div>
                   </div>
@@ -602,15 +669,15 @@ const Homepage = () => {
                   <p className="m-0">It took me 4 months to watch the first 4 episodes of this show. Everytime I tried, I just couldn't get into it until something clicked and all of a sudden, I found myself experiencing an absolutely marvelous TV Series. Every subsequent season impressed me more and more with it's detailed level of storytelling and complex characters that go through monumental growth over the course of the journey. The show that often came to my mind was Breaking Bad so hopefully you understand the quality that I am talking about.</p>
                 </div>
                 <div className="self-stretch flex flex-row items-start justify-between gap-[0rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.5rem]">
+                  <div className="flex flex-row items-center justify-between gap-[0.5rem]">
                     <img className="w-[2.5rem] relative rounded-[32px] h-[2.5rem] object-cover" alt="" src={image10} />
                     <div className="flex flex-col items-start justify-center gap-[0.125rem]">
                       <div className="relative leading-[1.25rem] [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:7] [-webkit-box-orient:vertical]">Johnson Jack</div>
                       <div className="relative text-[0.75rem] leading-[1rem] text-darkgray [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:7] [-webkit-box-orient:vertical]">23 December 2023</div>
                     </div>
                   </div>
-                  <div className="flex flex-row items-start justify-start gap-[0.75rem] text-darkgray">
-                    <div className="rounded-[32px] border-gray-100 border-solid border-[1px] flex flex-row items-center justify-start py-[0.375rem] px-[0.75rem] gap-[0.5rem]">
+                  <div className="flex flex-row items-center justify-center gap-[0.75rem] text-darkgray">
+                    <div className="rounded-[32px] border-gray-100 border-solid border-[1px] flex flex-row items-center justify-center py-[0.375rem] px-[0.75rem] gap-[0.5rem]">
                       <img className="w-[1.25rem] relative h-[1.25rem]" alt="" src={like} />
                       <div className="relative leading-[1.25rem] [display:-webkit-inline-box] overflow-hidden text-ellipsis [-webkit-line-clamp:7] [-webkit-box-orient:vertical]">28</div>
                     </div>
@@ -621,10 +688,10 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch flex-1 rounded-md bg-gray-200 border-gray-100 border-solid border-[1px] flex flex-col items-start justify-start p-[1.25rem] gap-[0.75rem]">
+              <div className="w-full rounded-md bg-gray-200 border border-gray-100 flex flex-col p-5 gap-3">
                 <div className="self-stretch flex flex-row items-start justify-between gap-[0rem] text-[1rem]">
                   <div className="flex-1 relative leading-[1.5rem] font-medium">One of the best shows ever</div>
-                  <div className="flex flex-row items-center justify-start gap-[0.25rem] text-[0.875rem]">
+                  <div className="flex flex-row items-center justify-center gap-[0.25rem] text-[0.875rem]">
                     <img className="w-[1.25rem] relative h-[1.25rem]" alt="" src={star} />
                     <div className="relative leading-[1.25rem] font-medium">8.9</div>
                   </div>
@@ -652,7 +719,7 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className="w-full max-w-[66.5rem] flex flex-col items-start justify-start gap-8 px-4">
+          <div className="w-full max-w-[90%] lg:max-w-[1200px] xl:max-w-[1600px] mx-auto flex flex-col items-start justify-start gap-8 px-4">
             {/* Header */}
             <div className="w-full flex flex-row items-center justify-between">
               <div className="text-lg md:text-xl font-medium leading-8">More like this</div>
@@ -786,7 +853,7 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div className="w-full max-w-[66.5rem] flex flex-col gap-6 px-4">
+          <div className="w-full max-w-[1920px] min-h-screen flex flex-col gap-4 sm:gap-6 lg:gap-8 px-4 mx-auto">
             {/* Header */}
             <div className="flex flex-row items-center justify-between gap-4">
               <div className="text-lg md:text-xl font-medium">Trivia</div>
@@ -797,7 +864,7 @@ const Homepage = () => {
             </div>
 
             {/* Cards Container */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
               {/* Card 1 */}
               <div className="rounded-md bg-gray-200 border border-gray-100 p-5 flex flex-col gap-3 h-auto">
                 <div className="text-sm leading-relaxed text-goldenrod-100 line-clamp-6">
@@ -821,11 +888,11 @@ const Homepage = () => {
                 <div className="border-t border-gray-100 flex flex-row items-center justify-between pt-3">
                   <div className="flex flex-row gap-3">
                     <div className="rounded-full bg-goldenrod-200 border border-goldenrod-100 flex flex-row items-center gap-2 py-1 px-3">
-                      <img className="w-5 h-5" alt="" src={like} />
+                      <img className="w-5 h-5 sm:w-6 sm:h-6" alt="" src={like} />
                       <span className="text-sm">28</span>
                     </div>
                     <div className="rounded-full border border-gray-100 text-darkgray flex flex-row items-center gap-2 py-1 px-3">
-                      <img className="w-5 h-5" alt="" src={dislike} />
+                      <img className="w-5 h-5 sm:w-6 sm:h-6" alt="" src={dislike} />
                       <span className="text-sm">02</span>
                     </div>
                   </div>
@@ -848,11 +915,11 @@ const Homepage = () => {
                 <div className="border-t border-gray-100 flex flex-row items-center justify-between pt-9">
                   <div className="flex flex-row gap-3">
                     <div className="rounded-full border border-gray-100 flex flex-row items-center gap-2 py-1 px-3">
-                      <img className="w-5 h-5" alt="" src={like} />
+                      <img className="w-5 h-5 sm:w-6 sm:h-6" alt="" src={like} />
                       <span className="text-sm">11</span>
                     </div>
                     <div className="rounded-full border border-gray-100 flex flex-row items-center gap-2 py-1 px-3">
-                      <img className="w-5 h-5" alt="" src={dislike} />
+                      <img className="w-5 h-5 sm:w-6 sm:h-6" alt="" src={dislike} />
                       <span className="text-sm">04</span>
                     </div>
                   </div>
@@ -869,7 +936,7 @@ const Homepage = () => {
         
 
       </div>
-    </div>
+    
   )
 }
 
