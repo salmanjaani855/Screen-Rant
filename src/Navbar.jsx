@@ -127,7 +127,7 @@ const Navbar = ({showSignIn}) => {
           <div className="flex flex-row items-center justify-start gap-[0.75rem]">
             
             <img className="w-[2.5rem] rounded-lg h-[2.5rem] bg-gray-100" alt="" src={DarkMode} />
-            <div className="relative leading-[1.75rem]">Dark</div>
+            <div className="relative leading-[1.75rem]"></div>
           </div>
 
 
